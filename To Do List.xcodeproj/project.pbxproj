@@ -14,6 +14,7 @@
 		3F672D7925C31E3D00FEC937 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F672D7825C31E3D00FEC937 /* To_Do_ListTests.swift */; };
 		3F672D8425C31E3D00FEC937 /* To_Do_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F672D8325C31E3D00FEC937 /* To_Do_ListUITests.swift */; };
 		3F672D9525C8694600FEC937 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F672D9425C8694600FEC937 /* ToDoList.swift */; };
+		3FD0071E25C9B285008EBFFD /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0071D25C9B285008EBFFD /* AddItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3F672D8325C31E3D00FEC937 /* To_Do_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITests.swift; sourceTree = "<group>"; };
 		3F672D8525C31E3D00FEC937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F672D9425C8694600FEC937 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		3FD0071D25C9B285008EBFFD /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				3F672D6625C31E3800FEC937 /* To_Do_ListApp.swift */,
 				3F672D6825C31E3800FEC937 /* ContentView.swift */,
+				3FD0071D25C9B285008EBFFD /* AddItemView.swift */,
 				3F672D9425C8694600FEC937 /* ToDoList.swift */,
 				3F672D6A25C31E3C00FEC937 /* Assets.xcassets */,
 				3F672D6F25C31E3C00FEC937 /* Info.plist */,
@@ -265,6 +268,7 @@
 				3F672D6925C31E3800FEC937 /* ContentView.swift in Sources */,
 				3F672D9525C8694600FEC937 /* ToDoList.swift in Sources */,
 				3F672D6725C31E3800FEC937 /* To_Do_ListApp.swift in Sources */,
+				3FD0071E25C9B285008EBFFD /* AddItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
