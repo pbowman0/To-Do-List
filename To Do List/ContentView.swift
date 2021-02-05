@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var toDoList = ToDoList()
+    @ObservedObject var toDoList = ToDoList ()
     @State private var showingAddItemView = false
     var body: some View {
         NavigationView {
@@ -35,28 +35,26 @@ struct ContentView: View {
                 AddItemView(toDoList: toDoList)
             })
             .navigationBarTitle("To Do List")
-            .navigationBarItems(leading: EditButton())
-            trailing: Button(action: {
-            showingAddItemView = true}) {
-                Image(systemName: "plus")
-            })
-            }
+            .navigationBarItems(leading: EditButton(),
+                                trailing: Button(action: {
+                                                    showingAddItemView = true}) {
+                                    Image(systemName: "plus")
+                                })
         }
     }
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            Group {
-                ContentView()
-                ContentView()
-                ContentView()
-            }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ContentView()
         }
     }
-    
-    struct ToDoItem: Identifiable {
-        var id = UUID()
-        var priority = String()
-        var description = String()
-        var dueDate = Date()
-    }
+}
+
+struct ToDoItem: Identifiable, Codable {
+    var id = UUID()
+    var priority = String()
+    var description = String()
+    var dueDate = Date()
+}
